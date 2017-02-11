@@ -5,4 +5,7 @@ Rails.application.routes.draw do
 
   # this will set the welcome/index as the root of our application
   root 'welcome#index'
+
+  # this will add all the resources for our application
+  resources :docs
 end
