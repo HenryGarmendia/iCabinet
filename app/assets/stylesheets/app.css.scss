@@ -1,6 +1,6 @@
 $clouds: #ecf0f1;
 $light_gray: #C0C1C1;
-$amethyst: #9b59b6;
+$mid_blue: #2c3e50;
 $global_heading: #233140;
 
 @mixin bold_font {
@@ -42,11 +42,11 @@ body {
 // BUTTON STYLING
 
 button, .button {
-	border-radius: 0.3rem;
+	border-radius: 0.2rem;
 	border: none;
 	box-shadow: 0px 2px 0px rgba(76, 76, 76, 0.6);
 	outline: none;
-	background: $amethyst;
+	background: $mid_blue;
 	padding: 1rem 3.5rem;
 	transition: background 0.4s ease-out;
 	a {
@@ -62,7 +62,7 @@ button, .button {
 }
 
 a {
-	color: $amethyst;
+	color: $mid_blue;
 	text-decoration: none;
 	&:hover {
 		color: $clouds;
@@ -72,7 +72,7 @@ a {
 // HEADER STYLING
 
 header {
-	background: #529ECC;
+	background: #2980b9;
 	position: absolute;
 	top: 0;
 	width: 100%;
