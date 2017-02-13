@@ -4,9 +4,10 @@
 			- @docs.each do |doc|
 				%a{ href: (url_for [doc]) }
 					.doc
+						.img_container= image_tag("http://placeskull.com/300/220/f1c40f", :alt => "Your image alt gose here...")
 						%p.title= doc.title
+						%p.content= truncate(doc.content, length:110)
 						%p.date= time_ago_in_words(doc.created_at)
-						%p.content= truncate(doc.content, length:90)
 		- else
 			%h2 Create Doc!
 			%p Lorem ipsum dolor sit amet, consectetur adipisicing elit!
