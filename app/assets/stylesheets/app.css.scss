@@ -30,6 +30,12 @@ body {
 	padding: 3.5rem 0;
 }
 
+.form_wrapper {
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+}
+
 .clearfix:before, .clearfix:after {
 	content: " ";
 	display: table;
@@ -45,10 +51,11 @@ button, .button {
 	border-radius: 0.2rem;
 	border: none;
 	box-shadow: 0px 2px 0px rgba(76, 76, 76, 0.6);
+	cursor: pointer;
 	outline: none;
 	background: $mid_blue;
-	padding: 1rem 3.5rem;
-	transition: background 0.4s ease-out;
+	padding: 0.8rem 2.5rem;
+	// transition: background 0.4s ease-out;
 	a {
 		color: white;
 		text-decoration: none;
@@ -63,9 +70,30 @@ button, .button {
 
 a {
 	color: $mid_blue;
+	transition: background 0.4s ease-out;
 	text-decoration: none;
 	&:hover {
-		color: $clouds;
+		color: #white;
+	}
+}
+
+.btn_cancel {
+	border-radius: 0.2rem;
+	border: none;
+	box-shadow: 0px 2px 0px rgba(76, 76, 76, 0.6);
+	color: white;
+	cursor: pointer;
+	outline: none;
+	background: $mid_blue;
+	position: absolute;
+	bottom: 2.1rem;
+	left: 11rem;
+	padding: .8rem 2.5rem;
+	transition: background 0.4s ease-out;
+	a {
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
 	}
 }
 
@@ -82,13 +110,14 @@ header {
 		width: 90%;
 		margin: 0 auto;
 		#logo {
-			display: inline-block;
-			width: 15rem;
-			float: left;
-			font-weight: bold;
 			color: white;
+			display: inline-block;
 			font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+			font-weight: bold;
 			font-size: 2.0rem;
+			font-style: italic;
+			float: left;
+			width: 15rem;
 		}
 		nav {
 			float: right;
